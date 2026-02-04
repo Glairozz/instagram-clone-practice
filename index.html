@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaClone - Super Cool Instagram Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>InstaClone</h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="header-actions">
+                    <button class="icon-btn" id="homeBtn">
+                        <i class="fas fa-home"></i>
+                    </button>
+                    <button class="icon-btn" id="messageBtn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <button class="icon-btn" id="uploadBtn">
+                        <i class="fas fa-plus-square"></i>
+                    </button>
+                    <button class="icon-btn" id="heartBtn">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="icon-btn" id="profileBtn">
+                        <img src="https://picsum.photos/seed/profile1/32/32.jpg" alt="Profile">
+                    </button>
+                    <button class="icon-btn" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="main-grid">
+                <!-- Feed Section -->
+                <section class="feed">
+                    <!-- Stories -->
+                    <div class="stories-container">
+                        <div class="story">
+                            <div class="story-ring">
+                                <img src="https://picsum.photos/seed/story1/64/64.jpg" alt="Your Story">
+                            </div>
+                            <span>Your Story</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-ring">
+                                <img src="https://picsum.photos/seed/story2/64/64.jpg" alt="User 2">
+                            </div>
+                            <span>alex_walker</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-ring">
+                                <img src="https://picsum.photos/seed/story3/64/64.jpg" alt="User 3">
+                            </div>
+                            <span>sarah_chen</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-ring">
+                                <img src="https://picsum.photos/seed/story4/64/64.jpg" alt="User 4">
+                            </div>
+                            <span>mike_jones</span>
+                        </div>
+                        <div class="story">
+                            <div class="story-ring">
+                                <img src="https://picsum.photos/seed/story5/64/64.jpg" alt="User 5">
+                            </div>
+                            <span>emma_davis</span>
+                        </div>
+                    </div>
+
+                    <!-- Posts -->
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <img src="https://picsum.photos/seed/user1/40/40.jpg" alt="User" class="user-avatar">
+                                <div class="user-details">
+                                    <span class="username">alex_walker</span>
+                                    <span class="location">San Francisco, CA</span>
+                                </div>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-image">
+                            <img src="https://picsum.photos/seed/post1/600/600.jpg" alt="Post">
+                        </div>
+                        
+                        <div class="post-actions">
+                            <div class="action-buttons">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn comment-btn">
+                                    <i class="far fa-comment"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="far fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <button class="action-btn save-btn">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-stats">
+                            <span class="likes-count">1,234 likes</span>
+                        </div>
+                        
+                        <div class="post-caption">
+                            <span class="username">alex_walker</span>
+                            <span class="caption-text">Amazing sunset at the Golden Gate Bridge! 🌅 #goldenhour #sanfrancisco #sunset</span>
+                            <button class="show-more">more</button>
+                        </div>
+                        
+                        <div class="post-comments">
+                            <div class="comment">
+                                <span class="username">sarah_chen</span>
+                                <span class="comment-text">Wow! This is breathtaking! 😍</span>
+                            </div>
+                            <div class="comment">
+                                <span class="username">mike_jones</span>
+                                <span class="comment-text">Perfect timing for this shot!</span>
+                            </div>
+                        </div>
+                        
+                        <div class="post-time">2 HOURS AGO</div>
+                        
+                        <div class="add-comment">
+                            <input type="text" placeholder="Add a comment...">
+                            <button class="post-btn">Post</button>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="user-info">
+                                <img src="https://picsum.photos/seed/user2/40/40.jpg" alt="User" class="user-avatar">
+                                <div class="user-details">
+                                    <span class="username">emma_davis</span>
+                                    <span class="location">Tokyo, Japan</span>
+                                </div>
+                            </div>
+                            <button class="more-btn">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-image">
+                            <img src="https://picsum.photos/seed/post2/600/600.jpg" alt="Post">
+                        </div>
+                        
+                        <div class="post-actions">
+                            <div class="action-buttons">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn comment-btn">
+                                    <i class="far fa-comment"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="far fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <button class="action-btn save-btn">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="post-stats">
+                            <span class="likes-count">2,567 likes</span>
+                        </div>
+                        
+                        <div class="post-caption">
+                            <span class="username">emma_davis</span>
+                            <span class="caption-text">Street food adventure in Tokyo! 🍜 Best ramen ever!</span>
+                            <button class="show-more">more</button>
+                        </div>
+                        
+                        <div class="post-comments">
+                            <div class="comment">
+                                <span class="username">alex_walker</span>
+                                <span class="comment-text">I need to go here! 🇯🇵</span>
+                            </div>
+                        </div>
+                        
+                        <div class="post-time">5 HOURS AGO</div>
+                        
+                        <div class="add-comment">
+                            <input type="text" placeholder="Add a comment...">
+                            <button class="post-btn">Post</button>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-profile">
+                        <div class="profile-info">
+                            <img src="https://picsum.photos/seed/profile1/56/56.jpg" alt="Your Profile" class="sidebar-avatar">
+                            <div class="profile-details">
+                                <span class="username">your_username</span>
+                                <span class="fullname">Your Name</span>
+                            </div>
+                        </div>
+                        <button class="switch-btn">Switch</button>
+                    </div>
+                    
+                    <div class="suggestions">
+                        <div class="suggestions-header">
+                            <span>Suggestions For You</span>
+                            <button class="see-all">See All</button>
+                        </div>
+                        
+                        <div class="suggestion">
+                            <div class="suggestion-info">
+                                <img src="https://picsum.photos/seed/suggest1/32/32.jpg" alt="User" class="suggestion-avatar">
+                                <div class="suggestion-details">
+                                    <span class="username">jane_smith</span>
+                                    <span class="suggestion-text">Suggested for you</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        
+                        <div class="suggestion">
+                            <div class="suggestion-info">
+                                <img src="https://picsum.photos/seed/suggest2/32/32.jpg" alt="User" class="suggestion-avatar">
+                                <div class="suggestion-details">
+                                    <span class="username">tech_guru</span>
+                                    <span class="suggestion-text">Popular</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                        
+                        <div class="suggestion">
+                            <div class="suggestion-info">
+                                <img src="https://picsum.photos/seed/suggest3/32/32.jpg" alt="User" class="suggestion-avatar">
+                                <div class="suggestion-details">
+                                    <span class="username">travel_expert</span>
+                                    <span class="suggestion-text">New to Instagram</span>
+                                </div>
+                            </div>
+                            <button class="follow-btn">Follow</button>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="#">About</a>
+                        <a href="#">Help</a>
+                        <a href="#">Press</a>
+                        <a href="#">API</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Locations</a>
+                        <a href="#">Language</a>
+                    </div>
+                    
+                    <div class="copyright">
+                        © 2024 INSTACLONE FROM META
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Upload Modal -->
+    <div class="modal" id="uploadModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create new post</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="upload-area">
+                    <i class="fas fa-image"></i>
+                    <p>Drag photos and videos here</p>
+                    <button class="select-btn">Select from computer</button>
+                    <input type="file" id="fileInput" accept="image/*,video/*" multiple hidden>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stories Modal -->
+    <div class="stories-modal" id="storiesModal">
+        <div class="stories-container-modal">
+            <div class="story-content">
+                <div class="story-header">
+                    <img src="https://picsum.photos/seed/storyview/40/40.jpg" alt="User" class="story-avatar">
+                    <span class="story-username">alex_walker</span>
+                    <span class="story-time">2h ago</span>
+                    <button class="close-stories">&times;</button>
+                </div>
+                <div class="story-image">
+                    <img src="https://picsum.photos/seed/storyview/400/600.jpg" alt="Story">
+                </div>
+                <div class="story-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
